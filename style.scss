@@ -1,0 +1,14 @@
+$colors: (
+    primary: #45a29e
+    primary-light: #66fcf1 
+);
+    @function color($color-name){
+    @return map-get($colors, $color-name)
+}
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}

@@ -1,14 +1,38 @@
 $colors: (
-    primary: #45a29e
-    primary-light: #66fcf1 
+  primary: #45a29e primary-light: #66fcf1,
 );
-    @function color($color-name){
-    @return map-get($colors, $color-name)
+@function color($color-name) {
+  @return map-get($colors, $color-name);
 }
 html,
 body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-size: 62.5%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+.header {
+  height: 100vh;
+  display: flex;
+  //flex-direction: column;
+  //align-items: center;
+  //justify-content: center;
+  position: relative;
+  background-color: limegreen;
+}
+
+.header-text-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.header-primary-name {
+  font-size: 10rem;
+  display: block;
+}
+
+.header-primary-sub {
+  font-size: 4rem;
 }
